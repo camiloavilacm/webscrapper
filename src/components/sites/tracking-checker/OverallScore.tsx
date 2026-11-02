@@ -2,13 +2,26 @@
 
 import React, { useEffect, useState } from "react";
 import { InfoDialog } from "./InfoDialog";
+import { reportData, type Subscore } from "@/data/reportData";
 
 interface OverallScoreProps {
   score?: number;
   trackersCount?: number;
+  rating?: string;
+  subscores?: {
+    analytics: Subscore;
+    advertising: Subscore;
+    cookieDurability: Subscore;
+    seo: Subscore;
+  };
 }
 
-export function OverallScore({ score = 16, trackersCount = 8 }: OverallScoreProps) {
+export function OverallScore(props: OverallScoreProps) {
+  const score = props.score ?? reportData.score.overall;
+  const trackersCount = props.trackersCount ?? reportData.score.trackersDetected;
+  const rating = props.rating ?? reportData.score.rating;
+  const subscores = props.subscores ?? reportData.score.subscores;
+
   const [displayScore, setDisplayScore] = useState(0);
 
   useEffect(() => {
@@ -83,7 +96,7 @@ export function OverallScore({ score = 16, trackersCount = 8 }: OverallScoreProp
             />
           </svg>
           <span className="paragraph-lg-semibold absolute inset-0 flex items-center justify-center text-heading font-medium">
-            Weak
+            {rating}
           </span>
         </div>
       </div>
@@ -94,13 +107,13 @@ export function OverallScore({ score = 16, trackersCount = 8 }: OverallScoreProp
         <div className="border-ghost border-b lg:border-b-0 lg:border-r p-md">
           <div className="flex h-full min-h-[105px] flex-col justify-between gap-sm">
             <div className="flex flex-wrap items-start justify-between gap-md">
-              <p className="heading-5 text-paragraph">Analytics</p>
+              <p className="heading-5 text-paragraph">{subscores.analytics.name}</p>
               <span className="inline-flex items-center gap-2xs px-2xs py-3xs rounded-sm caption-sm text-heading bg-neutral-100 border border-ghost">
-                4 issues identified
+                {subscores.analytics.issuesCount} issues identified
               </span>
             </div>
             <div className="flex flex-col gap-sm">
-              <p className="paragraph-md-regular text-paragraph font-medium">Weak</p>
+              <p className="paragraph-md-regular text-paragraph font-medium">{subscores.analytics.rating}</p>
               <div className="flex gap-2xs">
                 <span className="h-2 flex-1 rounded-l-full bg-[#f1416c]"></span>
                 <span className="h-2 flex-1 bg-neutral-200"></span>
@@ -115,13 +128,13 @@ export function OverallScore({ score = 16, trackersCount = 8 }: OverallScoreProp
         <div className="border-ghost border-b lg:border-b-0 p-md">
           <div className="flex h-full min-h-[105px] flex-col justify-between gap-sm">
             <div className="flex flex-wrap items-start justify-between gap-md">
-              <p className="heading-5 text-paragraph">Advertising</p>
+              <p className="heading-5 text-paragraph">{subscores.advertising.name}</p>
               <span className="inline-flex items-center gap-2xs px-2xs py-3xs rounded-sm caption-sm text-heading bg-neutral-100 border border-ghost">
-                6 issues identified
+                {subscores.advertising.issuesCount} issues identified
               </span>
             </div>
             <div className="flex flex-col gap-sm">
-              <p className="paragraph-md-regular text-paragraph font-medium">Weak</p>
+              <p className="paragraph-md-regular text-paragraph font-medium">{subscores.advertising.rating}</p>
               <div className="flex gap-2xs">
                 <span className="h-2 flex-1 rounded-l-full bg-[#f1416c]"></span>
                 <span className="h-2 flex-1 bg-neutral-200"></span>
@@ -136,13 +149,13 @@ export function OverallScore({ score = 16, trackersCount = 8 }: OverallScoreProp
         <div className="border-ghost border-b lg:border-b-0 lg:border-t lg:border-r p-md">
           <div className="flex h-full min-h-[105px] flex-col justify-between gap-sm">
             <div className="flex flex-wrap items-start justify-between gap-md">
-              <p className="heading-5 text-paragraph">Cookie durability</p>
+              <p className="heading-5 text-paragraph">{subscores.cookieDurability.name}</p>
               <span className="inline-flex items-center gap-2xs px-2xs py-3xs rounded-sm caption-sm text-heading bg-neutral-100 border border-ghost">
-                6 issues identified
+                {subscores.cookieDurability.issuesCount} issues identified
               </span>
             </div>
             <div className="flex flex-col gap-sm">
-              <p className="paragraph-md-regular text-paragraph font-medium">Weak</p>
+              <p className="paragraph-md-regular text-paragraph font-medium">{subscores.cookieDurability.rating}</p>
               <div className="flex gap-2xs">
                 <span className="h-2 flex-1 rounded-l-full bg-[#f1416c]"></span>
                 <span className="h-2 flex-1 bg-neutral-200"></span>
@@ -157,13 +170,13 @@ export function OverallScore({ score = 16, trackersCount = 8 }: OverallScoreProp
         <div className="lg:border-t border-ghost p-md">
           <div className="flex h-full min-h-[105px] flex-col justify-between gap-sm">
             <div className="flex flex-wrap items-start justify-between gap-md">
-              <p className="heading-5 text-paragraph">SEO</p>
+              <p className="heading-5 text-paragraph">{subscores.seo.name}</p>
               <span className="inline-flex items-center gap-2xs px-2xs py-3xs rounded-sm caption-sm text-heading bg-neutral-100 border border-ghost">
-                7 issues identified
+                {subscores.seo.issuesCount} issues identified
               </span>
             </div>
             <div className="flex flex-col gap-sm">
-              <p className="paragraph-md-regular text-paragraph font-medium">Medium</p>
+              <p className="paragraph-md-regular text-paragraph font-medium">{subscores.seo.rating}</p>
               <div className="flex gap-2xs">
                 <span className="h-2 flex-1 rounded-l-full bg-[#ffc64a]"></span>
                 <span className="h-2 flex-1 bg-[#ffc64a]"></span>

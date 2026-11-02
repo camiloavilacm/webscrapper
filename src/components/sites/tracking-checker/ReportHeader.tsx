@@ -1,24 +1,27 @@
 import React from "react";
 import Image from "next/image";
+import { reportData } from "@/data/reportData";
 
 interface ReportHeaderProps {
   domain?: string;
   scanDate?: string;
   scanDateShort?: string;
+  screenshotUrl?: string;
 }
 
-export function ReportHeader({
-  domain = "theecowoman.es",
-  scanDate = "30 October 2026 01:55 UTC",
-  scanDateShort = "30 Oct 2026 01:55 UTC",
-}: ReportHeaderProps) {
+export function ReportHeader(props: ReportHeaderProps) {
+  const domain = props.domain ?? reportData.siteInfo.domain;
+  const scanDate = props.scanDate ?? reportData.siteInfo.scanDate;
+  const scanDateShort = props.scanDateShort ?? reportData.siteInfo.scanDateShort;
+  const screenshotUrl = props.screenshotUrl ?? reportData.siteInfo.screenshotUrl;
+
   return (
     <header className="flex w-full flex-col gap-md xl:flex-row xl:items-end">
       <div className="flex min-w-px flex-1 items-center gap-md">
         {/* Screenshot preview */}
         <div className="relative h-[80px] w-[126px] shrink-0 overflow-hidden rounded-lg border border-tertiary xl:h-[115px] xl:w-[180px] bg-neutral-200">
           <Image
-            src="/sites/tracking-checker/screenshot.png"
+            src={screenshotUrl}
             alt={`Screenshot of ${domain}`}
             fill
             priority

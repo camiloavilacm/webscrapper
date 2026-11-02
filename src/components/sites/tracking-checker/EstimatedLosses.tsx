@@ -3,15 +3,33 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import { InfoDialog } from "./InfoDialog";
+import { reportData } from "@/data/reportData";
 
-const AD_SPEND_PRESETS = [1000, 3000, 5000, 10000, 30000];
-const VISITOR_PRESETS = [10000, 50000, 100000, 500000, 2000000];
+interface EstimatedLossesProps {
+  defaultAdSpend?: number;
+  defaultVisitors?: number;
+  adSpendPresets?: number[];
+  visitorsPresets?: number[];
+  shopifyBanner?: {
+    badges: string[];
+    title: string;
+    buttonText: string;
+    appUrl: string;
+  };
+}
 
-export function EstimatedLosses() {
-  const [adSpend, setAdSpend] = useState<number>(5000);
-  const [visitors, setVisitors] = useState<number>(50000);
-  const [adSpendInput, setAdSpendInput] = useState<string>("$5,000");
-  const [visitorsInput, setVisitorsInput] = useState<string>("50,000");
+export function EstimatedLosses(props: EstimatedLossesProps) {
+  const config = reportData.estimatedLosses;
+  const initialAdSpend = props.defaultAdSpend ?? config.defaultAdSpend;
+  const initialVisitors = props.defaultVisitors ?? config.defaultVisitors;
+  const adSpendPresets = props.adSpendPresets ?? config.adSpendPresets;
+  const visitorsPresets = props.visitorsPresets ?? config.visitorsPresets;
+  const shopifyBanner = props.shopifyBanner ?? config.shopifyBanner;
+
+  const [adSpend, setAdSpend] = useState<number>(initialAdSpend);
+  const [visitors, setVisitors] = useState<number>(initialVisitors);
+  const [adSpendInput, setAdSpendInput] = useState<string>(`$${initialAdSpend.toLocaleString()}`);
+  const [visitorsInput, setVisitorsInput] = useState<string>(initialVisitors.toLocaleString());
 
   const handleAdSpendPreset = (val: number) => {
     setAdSpend(val);
@@ -77,7 +95,7 @@ export function EstimatedLosses() {
                 onChange={handleAdSpendChange}
               />
               <div className="flex flex-wrap gap-2 pt-1" data-testid="estimated-losses-ad-spend-presets">
-                {AD_SPEND_PRESETS.map((val) => (
+                {adSpendPresets.map((val) => (
                   <button
                     key={val}
                     type="button"
@@ -114,7 +132,7 @@ export function EstimatedLosses() {
                 onChange={handleVisitorsChange}
               />
               <div className="flex flex-wrap gap-2 pt-1" data-testid="estimated-losses-visitors-presets">
-                {VISITOR_PRESETS.map((val) => (
+                {visitorsPresets.map((val) => (
                   <button
                     key={val}
                     type="button"
@@ -164,25 +182,24 @@ export function EstimatedLosses() {
         <div className="flex flex-col gap-md">
           {/* Feature Badges */}
           <div className="flex flex-wrap gap-xs">
-            <span className="inline-flex items-center px-2.5 py-1 rounded-sm text-[12px] font-mono text-heading bg-[#f8f6f4] border border-[#dbd7cc]">
-              No coding
-            </span>
-            <span className="inline-flex items-center px-2.5 py-1 rounded-sm text-[12px] font-mono text-heading bg-[#f8f6f4] border border-[#dbd7cc]">
-              ~20% sales recovered
-            </span>
-            <span className="inline-flex items-center px-2.5 py-1 rounded-sm text-[12px] font-mono text-heading bg-[#f8f6f4] border border-[#dbd7cc]">
-              Lower ad costs
-            </span>
+            {shopifyBanner.badges.map((b) => (
+              <span
+                key={b}
+                className="inline-flex items-center px-2.5 py-1 rounded-sm text-[12px] font-mono text-heading bg-[#f8f6f4] border border-[#dbd7cc]"
+              >
+                {b}
+              </span>
+            ))}
           </div>
 
           <h3 className="heading-4 text-heading leading-snug">
-            Set up server-side tracking for Shopify much faster
+            {shopifyBanner.title}
           </h3>
         </div>
 
         <div className="pt-4">
           <a
-            href="https://apps.shopify.com/search?q=server-side+tracking"
+            href={shopifyBanner.appUrl}
             target="_blank"
             rel="noreferrer"
             data-testid="estimated-losses-cms-open-app"
@@ -195,7 +212,7 @@ export function EstimatedLosses() {
               height={20}
               className="size-5 object-contain"
             />
-            <span>Open Shopify App</span>
+            <span>{shopifyBanner.buttonText}</span>
             <svg className="size-4" viewBox="0 0 20 20" fill="currentColor">
               <path
                 fillRule="evenodd"

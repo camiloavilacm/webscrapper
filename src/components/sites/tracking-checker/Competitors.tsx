@@ -1,79 +1,15 @@
 import React from "react";
 import Image from "next/image";
 import { InfoDialog } from "./InfoDialog";
+import { reportData, type CompetitorItem } from "@/data/reportData";
 
-interface Competitor {
-  key: string;
-  name: string;
-  url: string;
-  faviconUrl: string;
-  trackingScore: number;
-  usesServerSide: boolean;
-  categories: {
-    analytics: string | null;
-    advertising: string;
-    cookieDurability: string;
-  };
-  isYourSite?: boolean;
+interface CompetitorsProps {
+  competitors?: CompetitorItem[];
 }
 
-const COMPETITORS_DATA: Competitor[] = [
-  {
-    key: "your-site",
-    name: "Your site",
-    url: "theecowoman.es",
-    faviconUrl: "/sites/tracking-checker/favicons/your-site.png",
-    trackingScore: 16,
-    usesServerSide: false,
-    categories: {
-      analytics: "Weak",
-      advertising: "Weak",
-      cookieDurability: "Weak",
-    },
-    isYourSite: true,
-  },
-  {
-    key: "ecoreina",
-    name: "ecoreina.com",
-    url: "ecoreina.com",
-    faviconUrl: "/sites/tracking-checker/favicons/ecoreina.png",
-    trackingScore: 36,
-    usesServerSide: false,
-    categories: {
-      analytics: null,
-      advertising: "Weak",
-      cookieDurability: "Weak",
-    },
-  },
-  {
-    key: "smoon",
-    name: "smoon-lingerie.com",
-    url: "smoon-lingerie.com",
-    faviconUrl: "/sites/tracking-checker/favicons/smoon.webp",
-    trackingScore: 31,
-    usesServerSide: true,
-    categories: {
-      analytics: "Weak",
-      advertising: "Weak",
-      cookieDurability: "Weak",
-    },
-  },
-  {
-    key: "cocoro",
-    name: "cocoro-intim.com",
-    url: "cocoro-intim.com",
-    faviconUrl: "/sites/tracking-checker/favicons/cocoro.jpg",
-    trackingScore: 25,
-    usesServerSide: false,
-    categories: {
-      analytics: "Weak",
-      advertising: "Weak",
-      cookieDurability: "Weak",
-    },
-  },
-];
+export function Competitors(props: CompetitorsProps) {
+  const competitors = props.competitors ?? reportData.competitors;
 
-export function Competitors() {
   const rows = [
     { label: "Tracking score", type: "score" },
     { label: "Server-side tracking", type: "serverSide" },
@@ -102,7 +38,7 @@ export function Competitors() {
             <div className="flex min-h-[50px] flex-1 px-sm min-w-[230px] items-center text-sm font-medium text-slate-500">
               Feature / Site
             </div>
-            {COMPETITORS_DATA.map((site) => (
+            {competitors.map((site) => (
               <div
                 key={site.key}
                 className={`flex min-h-[50px] flex-1 px-sm min-w-[170px] items-center justify-center gap-2 ${
@@ -136,7 +72,7 @@ export function Competitors() {
                 <span className="text-[14px] text-heading font-medium">{row.label}</span>
               </div>
 
-              {COMPETITORS_DATA.map((site) => (
+              {competitors.map((site) => (
                 <div
                   key={site.key}
                   className={`flex flex-1 px-sm min-w-[170px] flex-col items-center justify-center py-1 ${
@@ -188,7 +124,7 @@ export function Competitors() {
           {/* Bottom rounded cap for your site column */}
           <div className="flex">
             <div className="flex min-w-[230px]"></div>
-            {COMPETITORS_DATA.map((site) => (
+            {competitors.map((site) => (
               <div
                 key={site.key}
                 className={`min-w-[170px] h-3 ${site.isYourSite ? "rounded-b-lg bg-[#f8f6f4]" : ""}`}

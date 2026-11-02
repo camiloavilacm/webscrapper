@@ -1,37 +1,20 @@
 import React from "react";
 import Image from "next/image";
 import { InfoDialog } from "./InfoDialog";
+import { reportData, type Technology } from "@/data/reportData";
 
-export function TrackingArchitecture() {
-  const properlyConfigured = [
-    { name: "Microsoft Clarity", icon: "/sites/tracking-checker/icons/Microsoft_Clarity.png" },
-    { name: "Hotjar", icon: "/sites/tracking-checker/icons/Hotjar.png" },
-  ];
+interface TrackingArchitectureProps {
+  properlyConfigured?: Technology[];
+  withIssues?: { name: string; icon: string; href: string }[];
+  serverSideBenefits?: string[];
+  businessImpact?: string[];
+}
 
-  const clientSideWithIssues = [
-    { name: "Meta", icon: "/sites/tracking-checker/icons/Meta.png", href: "#rec-meta" },
-    { name: "Google Analytics 4", icon: "/sites/tracking-checker/icons/Google_Analytics.png", href: "#rec-ga4" },
-    { name: "Google Ads", icon: "/sites/tracking-checker/icons/Google_Ads.png", href: "#rec-gads" },
-    { name: "Klaviyo", icon: "/sites/tracking-checker/icons/Klaviyo.png", href: "#rec-klaviyo" },
-    { name: "Universal Analytics", icon: "/sites/tracking-checker/icons/Google_Universal.png", href: "#rec-ua" },
-    { name: "Microsoft Ads", icon: "/sites/tracking-checker/icons/Microsoft.png", href: "#rec-msads" },
-  ];
-
-  const serverSideBenefits = [
-    "Ad blocker resistant",
-    "ITP-resistant cookies",
-    "Bot and AI detection",
-    "Offline conversions",
-    "Data enrichment",
-  ];
-
-  const businessImpact = [
-    "Reduced data loss from browsers and ad blockers",
-    "Better optimization signals for ad platforms",
-    "Higher event match quality and ROAS measurement",
-    "Better audience building for remarketing",
-    "Easier compliance with privacy regulations",
-  ];
+export function TrackingArchitecture(props: TrackingArchitectureProps) {
+  const properlyConfigured = props.properlyConfigured ?? reportData.trackingArchitecture.properlyConfigured;
+  const clientSideWithIssues = props.withIssues ?? reportData.trackingArchitecture.withIssues;
+  const serverSideBenefits = props.serverSideBenefits ?? reportData.trackingArchitecture.serverSideBenefits;
+  const businessImpact = props.businessImpact ?? reportData.trackingArchitecture.businessImpact;
 
   return (
     <section className="flex flex-col gap-lg rounded-lg bg-primary p-lg-responsive border border-tertiary shadow-xs">
@@ -70,13 +53,15 @@ export function TrackingArchitecture() {
                 key={tech.name}
                 className="flex min-w-0 items-center gap-xs rounded-full bg-[#f8f6f4] px-sm py-xs text-[15px] text-paragraph border border-[#dbd7cc]/40"
               >
-                <Image
-                  src={tech.icon}
-                  alt={tech.name}
-                  width={20}
-                  height={20}
-                  className="size-[20px] shrink-0 object-contain"
-                />
+                {tech.iconSrc && (
+                  <Image
+                    src={tech.iconSrc}
+                    alt={tech.name}
+                    width={20}
+                    height={20}
+                    className="size-[20px] shrink-0 object-contain"
+                  />
+                )}
                 <span className="min-w-0 truncate">{tech.name}</span>
               </span>
             ))}
