@@ -22,7 +22,7 @@ const COMPETITORS_DATA: Competitor[] = [
     key: "your-site",
     name: "Your site",
     url: "theecowoman.es",
-    faviconUrl: "/sites/stape/favicons/your-site.png",
+    faviconUrl: "/sites/tracking-checker/favicons/your-site.png",
     trackingScore: 16,
     usesServerSide: false,
     categories: {
@@ -36,7 +36,7 @@ const COMPETITORS_DATA: Competitor[] = [
     key: "ecoreina",
     name: "ecoreina.com",
     url: "ecoreina.com",
-    faviconUrl: "/sites/stape/favicons/ecoreina.png",
+    faviconUrl: "/sites/tracking-checker/favicons/ecoreina.png",
     trackingScore: 36,
     usesServerSide: false,
     categories: {
@@ -49,7 +49,7 @@ const COMPETITORS_DATA: Competitor[] = [
     key: "smoon",
     name: "smoon-lingerie.com",
     url: "smoon-lingerie.com",
-    faviconUrl: "/sites/stape/favicons/smoon.webp",
+    faviconUrl: "/sites/tracking-checker/favicons/smoon.webp",
     trackingScore: 31,
     usesServerSide: true,
     categories: {
@@ -62,7 +62,7 @@ const COMPETITORS_DATA: Competitor[] = [
     key: "cocoro",
     name: "cocoro-intim.com",
     url: "cocoro-intim.com",
-    faviconUrl: "/sites/stape/favicons/cocoro.jpg",
+    faviconUrl: "/sites/tracking-checker/favicons/cocoro.jpg",
     trackingScore: 25,
     usesServerSide: false,
     categories: {

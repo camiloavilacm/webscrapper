@@ -18,7 +18,7 @@ export function ReportHeader({
         {/* Screenshot preview */}
         <div className="relative h-[80px] w-[126px] shrink-0 overflow-hidden rounded-lg border border-tertiary xl:h-[115px] xl:w-[180px] bg-neutral-200">
           <Image
-            src="/sites/stape/screenshot.png"
+            src="/sites/tracking-checker/screenshot.png"
             alt={`Screenshot of ${domain}`}
             fill
             priority
@@ -96,45 +96,6 @@ export function ReportHeader({
             {domain}
           </p>
         </div>
-      </div>
-
-      {/* Action buttons */}
-      <div className="flex gap-xs xl:hidden">
-        <a
-          data-testid="report-header-button-run-scan"
-          target="_blank"
-          rel="noreferrer"
-          className="inline-flex items-center justify-center gap-xs border border-on-action-secondary text-on-action min-h-xl py-xs px-sm button-sm-text-mono rounded-md hover:bg-[#eae8e2] transition-colors w-full"
-          href="https://stape.io/website-tracking-checker"
-        >
-          Run new scan
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="size-4">
-            <path
-              fillRule="evenodd"
-              d="M5.22 14.78a.75.75 0 0 0 1.06 0l7.22-7.22v5.69a.75.75 0 0 0 1.5 0v-7.5a.75.75 0 0 0-.75-.75h-7.5a.75.75 0 0 0 0 1.5h5.69l-7.22 7.22a.75.75 0 0 0 0 1.06Z"
-              clipRule="evenodd"
-            />
-          </svg>
-        </a>
-      </div>
-
-      <div className="hidden gap-xs xl:flex">
-        <a
-          data-testid="report-header-button-run-scan-desktop"
-          target="_blank"
-          rel="noreferrer"
-          className="inline-flex items-center justify-center gap-xs border border-on-action-secondary text-on-action min-w-4xl min-h-3xl py-sm px-lg button-lg-text-mono rounded-lg hover:bg-[#eae8e2] transition-colors"
-          href="https://stape.io/website-tracking-checker"
-        >
-          Run new scan
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="size-5">
-            <path
-              fillRule="evenodd"
-              d="M5.22 14.78a.75.75 0 0 0 1.06 0l7.22-7.22v5.69a.75.75 0 0 0 1.5 0v-7.5a.75.75 0 0 0-.75-.75h-7.5a.75.75 0 0 0 0 1.5h5.69l-7.22 7.22a.75.75 0 0 0 0 1.06Z"
-              clipRule="evenodd"
-            />
-          </svg>
-        </a>
       </div>
     </header>
   );

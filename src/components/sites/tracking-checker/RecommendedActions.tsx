@@ -54,7 +54,7 @@ const RECOMMENDATIONS: RecommendationAction[] = [
     scorePercent: 19,
     isCritical: true,
     categories: ["Cookies"],
-    howToVideo: "https://www.youtube.com/watch?v=n-CtX-uieTQ&ab_channel=Stape",
+    howToVideo: "https://www.youtube.com/watch?v=n-CtX-uieTQ",
     howToTitle: "Learn how to increase first-party cookie lifetime set by a third-party IP",
     howToPost: {
       slug: "safari-itp",
@@ -71,7 +71,7 @@ const RECOMMENDATIONS: RecommendationAction[] = [
     scorePercent: 16,
     isCritical: true,
     categories: ["Analytics"],
-    howToVideo: "https://www.youtube.com/watch?v=z5jfbSB_-Ss&ab_channel=Stape",
+    howToVideo: "https://www.youtube.com/watch?v=z5jfbSB_-Ss",
     howToTitle: "Learn how to implement Google Analytics 4 server-side tracking",
     howToPost: {
       slug: "set-up-ga4-server-side-tracking",
@@ -105,7 +105,7 @@ const RECOMMENDATIONS: RecommendationAction[] = [
     scorePercent: 8,
     isCritical: false,
     categories: ["Advertising"],
-    howToVideo: "https://www.youtube.com/watch?v=ytNnSVodsA4&ab_channel=Stape",
+    howToVideo: "https://www.youtube.com/watch?v=ytNnSVodsA4",
     howToTitle: "Learn how to correctly implement Meta tracking",
     howToPost: {
       slug: "how-to-set-up-facebook-conversion-api",
@@ -122,7 +122,7 @@ const RECOMMENDATIONS: RecommendationAction[] = [
     scorePercent: 8,
     isCritical: false,
     categories: ["Advertising"],
-    howToVideo: "https://www.youtube.com/watch?v=z5jfbSB_-Ss&ab_channel=Stape",
+    howToVideo: "https://www.youtube.com/watch?v=z5jfbSB_-Ss",
     howToTitle: "Learn how to set up GA4 tracking using Google Tag Manager server-side container",
     howToPost: {
       slug: "set-up-ga4-server-side-tracking",
@@ -139,7 +139,7 @@ const RECOMMENDATIONS: RecommendationAction[] = [
     scorePercent: 6,
     isCritical: false,
     categories: ["Advertising"],
-    howToVideo: "https://www.youtube.com/watch?v=s-R6mvpiLk4&ab_channel=Stape",
+    howToVideo: "https://www.youtube.com/watch?v=s-R6mvpiLk4",
     howToTitle: "Learn how to implement Google Ads server-side tracking",
     howToPost: {
       slug: "server-side-conversion-tracking-in-google-ads-adwords",
@@ -170,7 +170,7 @@ const RECOMMENDATIONS: RecommendationAction[] = [
       {
         order: 1,
         name: "fbevents.js",
-        icon: "/sites/stape/icons/Meta.png",
+        icon: "/sites/tracking-checker/icons/Meta.png",
         provider: "Meta",
         dataSentTo: "US",
         categories: ["Advertising"],
@@ -180,7 +180,7 @@ const RECOMMENDATIONS: RecommendationAction[] = [
       {
         order: 2,
         name: "G gtag.js",
-        icon: "/sites/stape/icons/Google_Analytics.png",
+        icon: "/sites/tracking-checker/icons/Google_Analytics.png",
         provider: "Google",
         dataSentTo: "US",
         categories: ["Analytics"],
@@ -190,7 +190,7 @@ const RECOMMENDATIONS: RecommendationAction[] = [
       {
         order: 3,
         name: "AW gtag.js",
-        icon: "/sites/stape/icons/Google_Ads.png",
+        icon: "/sites/tracking-checker/icons/Google_Ads.png",
         provider: "Google",
         dataSentTo: "US",
         categories: ["Advertising"],
@@ -200,7 +200,7 @@ const RECOMMENDATIONS: RecommendationAction[] = [
       {
         order: 4,
         name: "onsite.js",
-        icon: "/sites/stape/icons/Klaviyo.png",
+        icon: "/sites/tracking-checker/icons/Klaviyo.png",
         provider: "Klaviyo",
         dataSentTo: "US",
         categories: ["Advertising"],
@@ -210,7 +210,7 @@ const RECOMMENDATIONS: RecommendationAction[] = [
       {
         order: 5,
         name: "klaviyo.js",
-        icon: "/sites/stape/icons/Klaviyo.png",
+        icon: "/sites/tracking-checker/icons/Klaviyo.png",
         provider: "Klaviyo",
         dataSentTo: "US",
         categories: ["Advertising"],
@@ -220,7 +220,7 @@ const RECOMMENDATIONS: RecommendationAction[] = [
       {
         order: 6,
         name: "fender_analytics.js",
-        icon: "/sites/stape/icons/Klaviyo.png",
+        icon: "/sites/tracking-checker/icons/Klaviyo.png",
         provider: "Klaviyo",
         dataSentTo: "US",
         categories: ["Advertising"],
@@ -230,7 +230,7 @@ const RECOMMENDATIONS: RecommendationAction[] = [
       {
         order: 7,
         name: "static.js",
-        icon: "/sites/stape/icons/Klaviyo.png",
+        icon: "/sites/tracking-checker/icons/Klaviyo.png",
         provider: "Klaviyo",
         dataSentTo: "US",
         categories: ["Advertising"],
@@ -240,7 +240,7 @@ const RECOMMENDATIONS: RecommendationAction[] = [
       {
         order: 8,
         name: "runtime.js",
-        icon: "/sites/stape/icons/Klaviyo.png",
+        icon: "/sites/tracking-checker/icons/Klaviyo.png",
         provider: "Klaviyo",
         dataSentTo: "US",
         categories: ["Advertising"],
@@ -250,7 +250,7 @@ const RECOMMENDATIONS: RecommendationAction[] = [
       {
         order: 9,
         name: "analytics.js",
-        icon: "/sites/stape/icons/Google_Universal.png",
+        icon: "/sites/tracking-checker/icons/Google_Universal.png",
         provider: "Google",
         dataSentTo: "US",
         categories: ["Advertising"],
@@ -260,7 +260,7 @@ const RECOMMENDATIONS: RecommendationAction[] = [
       {
         order: 10,
         name: "bat.js",
-        icon: "/sites/stape/icons/Microsoft.png",
+        icon: "/sites/tracking-checker/icons/Microsoft.png",
         provider: "Microsoft",
         dataSentTo: "US",
         categories: ["Advertising"],
@@ -270,7 +270,7 @@ const RECOMMENDATIONS: RecommendationAction[] = [
       {
         order: 11,
         name: "clarity.js",
-        icon: "/sites/stape/icons/Microsoft_Clarity.png",
+        icon: "/sites/tracking-checker/icons/Microsoft_Clarity.png",
         provider: "Microsoft",
         dataSentTo: "US",
         categories: ["Advertising"],
@@ -280,7 +280,7 @@ const RECOMMENDATIONS: RecommendationAction[] = [
       {
         order: 12,
         name: "hotjar.js",
-        icon: "/sites/stape/icons/Hotjar.png",
+        icon: "/sites/tracking-checker/icons/Hotjar.png",
         provider: "Hotjar",
         dataSentTo: "MT",
         categories: ["Analytics"],
@@ -550,7 +550,7 @@ export function RecommendedActions() {
 
                         {rec.howToPost && (
                           <a
-                            href={`https://stape.io/blog/${rec.howToPost.slug}`}
+                            href={`https://www.google.com/search?q=${encodeURIComponent(rec.howToPost.title)}`}
                             target="_blank"
                             rel="noreferrer"
                             className="flex items-center gap-3 p-3 rounded-lg bg-white border border-[#dbd7cc] hover:border-[#0d0d0d] transition-colors flex-1"

@@ -4,17 +4,17 @@ import { InfoDialog } from "./InfoDialog";
 
 export function TrackingArchitecture() {
   const properlyConfigured = [
-    { name: "Microsoft Clarity", icon: "/sites/stape/icons/Microsoft_Clarity.png" },
-    { name: "Hotjar", icon: "/sites/stape/icons/Hotjar.png" },
+    { name: "Microsoft Clarity", icon: "/sites/tracking-checker/icons/Microsoft_Clarity.png" },
+    { name: "Hotjar", icon: "/sites/tracking-checker/icons/Hotjar.png" },
   ];
 
   const clientSideWithIssues = [
-    { name: "Meta", icon: "/sites/stape/icons/Meta.png", href: "#rec-meta" },
-    { name: "Google Analytics 4", icon: "/sites/stape/icons/Google_Analytics.png", href: "#rec-ga4" },
-    { name: "Google Ads", icon: "/sites/stape/icons/Google_Ads.png", href: "#rec-gads" },
-    { name: "Klaviyo", icon: "/sites/stape/icons/Klaviyo.png", href: "#rec-klaviyo" },
-    { name: "Universal Analytics", icon: "/sites/stape/icons/Google_Universal.png", href: "#rec-ua" },
-    { name: "Microsoft Ads", icon: "/sites/stape/icons/Microsoft.png", href: "#rec-msads" },
+    { name: "Meta", icon: "/sites/tracking-checker/icons/Meta.png", href: "#rec-meta" },
+    { name: "Google Analytics 4", icon: "/sites/tracking-checker/icons/Google_Analytics.png", href: "#rec-ga4" },
+    { name: "Google Ads", icon: "/sites/tracking-checker/icons/Google_Ads.png", href: "#rec-gads" },
+    { name: "Klaviyo", icon: "/sites/tracking-checker/icons/Klaviyo.png", href: "#rec-klaviyo" },
+    { name: "Universal Analytics", icon: "/sites/tracking-checker/icons/Google_Universal.png", href: "#rec-ua" },
+    { name: "Microsoft Ads", icon: "/sites/tracking-checker/icons/Microsoft.png", href: "#rec-msads" },
   ];
 
   const serverSideBenefits = [

@@ -15,7 +15,7 @@ const ibmPlexMono = IBM_Plex_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Website Tracking Checker by Stape | theecowoman.es",
+  title: "Website Tracking Checker | theecowoman.es",
   description: "Website Tracking Report for theecowoman.es - Overall score, tracker architecture, and recommendations.",
 };
 

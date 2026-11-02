@@ -1,12 +1,11 @@
-import { Header } from "@/components/sites/stape/Header";
-import { ReportHeader } from "@/components/sites/stape/ReportHeader";
-import { OverallScore } from "@/components/sites/stape/OverallScore";
-import { DetectedTechnologies } from "@/components/sites/stape/DetectedTechnologies";
-import { TrackingArchitecture } from "@/components/sites/stape/TrackingArchitecture";
-import { EstimatedLosses } from "@/components/sites/stape/EstimatedLosses";
-import { Competitors } from "@/components/sites/stape/Competitors";
-import { RecommendedActions } from "@/components/sites/stape/RecommendedActions";
-import { ReportFooter } from "@/components/sites/stape/ReportFooter";
+import { Header } from "@/components/sites/tracking-checker/Header";
+import { ReportHeader } from "@/components/sites/tracking-checker/ReportHeader";
+import { OverallScore } from "@/components/sites/tracking-checker/OverallScore";
+import { DetectedTechnologies } from "@/components/sites/tracking-checker/DetectedTechnologies";
+import { TrackingArchitecture } from "@/components/sites/tracking-checker/TrackingArchitecture";
+import { EstimatedLosses } from "@/components/sites/tracking-checker/EstimatedLosses";
+import { Competitors } from "@/components/sites/tracking-checker/Competitors";
+import { RecommendedActions } from "@/components/sites/tracking-checker/RecommendedActions";
 
 export default function Home() {
   return (
@@ -24,7 +23,6 @@ export default function Home() {
             <EstimatedLosses />
             <Competitors />
             <RecommendedActions />
-            <ReportFooter />
           </main>
         </div>
       </div>

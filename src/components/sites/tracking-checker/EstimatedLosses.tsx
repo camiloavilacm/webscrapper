@@ -176,20 +176,20 @@ export function EstimatedLosses() {
           </div>
 
           <h3 className="heading-4 text-heading leading-snug">
-            Set up tracking for Shopify much faster with Stape
+            Set up server-side tracking for Shopify much faster
           </h3>
         </div>
 
         <div className="pt-4">
           <a
-            href="https://apps.shopify.com/stape-server-side-tracking"
+            href="https://apps.shopify.com/search?q=server-side+tracking"
             target="_blank"
             rel="noreferrer"
             data-testid="estimated-losses-cms-open-app"
             className="inline-flex items-center justify-center gap-2 rounded-lg bg-[#0d0d0d] text-white px-5 py-3 text-[14px] font-mono font-medium hover:bg-[#1e1f1e] transition-colors w-full sm:w-auto"
           >
             <Image
-              src="/sites/stape/icons/Shopify.png"
+              src="/sites/tracking-checker/icons/Shopify.png"
               alt="Shopify logo"
               width={20}
               height={20}

@@ -82,7 +82,7 @@
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
 
-  /* Stape Theme Variables */
+  /* Theme Variables */
   --color-white: #fff;
   --color-neutral-50: #f8f6f4;
   --color-neutral-100: #f3f1ed;
@@ -204,7 +204,7 @@
   }
 }
 
-/* Stape Custom Utilities & Tokens */
+/* Custom Utilities & Tokens */
 .visuals-neutral { background-color: var(--color-neutral-100); }
 .visuals-neutral-grey { background-color: var(--color-neutral-50); }
 .visuals-medium-purple { background-color: var(--color-purple-300); }
