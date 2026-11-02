@@ -1,0 +1,157 @@
+[
+  {
+    "title": "Use Cookie Keeper to bypass ITP limits and extend cookie duration",
+    "description": "With ITP, even cookies set from a first-party domain can be restricted. We've detected that you're not bypassing these cookie lifespan limits. Configure Cookie Keeper power-up to overcome ITP restrictions for your Shopify store.",
+    "scorePercent": 19,
+    "isCritical": true,
+    "howToVideo": "https://www.youtube.com/watch?v=n-CtX-uieTQ&ab_channel=Stape",
+    "howToTitle": "Learn how to increase first-party cookie lifetime set by a third-party IP",
+    "howToPost": {
+      "slug": "safari-itp",
+      "title": "Safari ITP - everything you need to know",
+      "language": "en",
+      "type": "blog"
+    },
+    "categories": [
+      "Cookies"
+    ],
+    "trackerIdentifier": null,
+    "pageSpeed": null,
+    "trackersWithIssue": [],
+    "cookies": [],
+    "scripts": []
+  },
+  {
+    "title": "Implement Google Analytics 4 server-side tracking",
+    "description": "We’ve detected a client-side Google Analytics 4 script. While this setup works, client-side tracking is more vulnerable to ad blockers, cookie restrictions, and browser privacy settings issues, which can negatively impact the accuracy and reliability of your data. Switching to server-side tracking will help to bypass these challenges.",
+    "scorePercent": 16,
+    "isCritical": true,
+    "howToVideo": "https://www.youtube.com/watch?v=z5jfbSB_-Ss&ab_channel=Stape",
+    "howToTitle": "Learn how to implement Google Analytics 4 server-side tracking",
+    "howToPost": {
+      "slug": "set-up-ga4-server-side-tracking",
+      "title": "How to set up GA4 server-side tracking",
+      "language": "en",
+      "type": "blog"
+    },
+    "categories": [
+      "Analytics"
+    ],
+    "trackerIdentifier": "0196a9c3-bc6d-7e4a-827e-81871d307354",
+    "pageSpeed": null,
+    "trackersWithIssue": [],
+    "cookies": [],
+    "scripts": []
+  },
+  {
+    "title": "Avoid negative impact of ad blockers",
+    "description": "It has been detected that your GTM container is loading without proper protection against ad blockers. Ad blockers can interfere with tracking, leading to inaccurate data and incomplete insights. By using Custom Loader, you can ensure reliability and make better data-driven decisions for your business.",
+    "scorePercent": 12,
+    "isCritical": false,
+    "howToVideo": "https://www.youtube.com/watch?v=sTKjNo3mR4E",
+    "howToTitle": "Learn how to avoid the harmful impact of ad blockers on tracking code",
+    "howToPost": {
+      "slug": "bypass-adblock-detection",
+      "title": "Avoid the harmful impact of ad blockers on your website tracking code",
+      "language": "en",
+      "type": "blog"
+    },
+    "categories": [
+      "Advertising",
+      "Analytics"
+    ],
+    "trackerIdentifier": null,
+    "pageSpeed": null,
+    "trackersWithIssue": [],
+    "cookies": [],
+    "scripts": []
+  },
+  {
+    "title": "Switch to web & server-side tracking for Meta",
+    "description": "We’ve detected that you're using client-side tracking for Meta. But Meta recommends a hybrid tracking method — combining both web and server-side tracking. Adding server-side tracking ensures you follow best practices and optimize data accuracy and functionality.",
+    "scorePercent": 8,
+    "isCritical": false,
+    "howToVideo": "https://www.youtube.com/watch?v=ytNnSVodsA4&ab_channel=Stape",
+    "howToTitle": "Learn how to correctly implement Meta tracking",
+    "howToPost": {
+      "slug": "how-to-set-up-facebook-conversion-api",
+      "title": "Set up Facebook server-side tracking with Facebook Conversions API",
+      "language": "en",
+      "type": "blog"
+    },
+    "categories": [
+      "Advertising"
+    ],
+    "trackerIdentifier": "0196a9c3-bc94-74c0-9dfb-0a54a50331fa",
+    "pageSpeed": null,
+    "trackersWithIssue": [],
+    "cookies": [],
+    "scripts": []
+  },
+  {
+    "title": "Remove Universal Analytics script",
+    "description": "We’ve detected that Universal Analytics is still active, but UA was disabled in July 2023. It continues to load unnecessary scripts and data dumps, which can slow down your website. We recommend removing Universal Analytics and migrating to GA4 for better performance and tracking.",
+    "scorePercent": 8,
+    "isCritical": false,
+    "howToVideo": "https://www.youtube.com/watch?v=z5jfbSB_-Ss&ab_channel=Stape",
+    "howToTitle": "Learn how to set up GA4 tracking using Google Tag Manager server-side container",
+    "howToPost": {
+      "slug": "set-up-ga4-server-side-tracking",
+      "title": "How to set up GA4 server-side tracking",
+      "language": "en",
+      "type": "blog"
+    },
+    "categories": [
+      "Advertising"
+    ],
+    "trackerIdentifier": "0196a9c3-bcca-749d-aee6-fcd14f21a041",
+    "pageSpeed": null,
+    "trackersWithIssue": [],
+    "cookies": [],
+    "scripts": []
+  },
+  {
+    "title": "Move to Google Ads server-side tracking",
+    "description": "We’ve detected a client-side Google Ads script. While this setup works, client-side tracking is more vulnerable to ad blockers, cookie restrictions, and browser privacy settings issues, which can negatively impact the accuracy and reliability of your data. Switching to server-side tracking will help to bypass these challenges.",
+    "scorePercent": 6,
+    "isCritical": false,
+    "howToVideo": "https://www.youtube.com/watch?v=s-R6mvpiLk4&ab_channel=Stape",
+    "howToTitle": "Learn how to implement Google Ads server-side tracking",
+    "howToPost": {
+      "slug": "server-side-conversion-tracking-in-google-ads-adwords",
+      "title": "Google Ads server-side tracking guide",
+      "language": "en",
+      "type": "blog"
+    },
+    "categories": [
+      "Advertising"
+    ],
+    "trackerIdentifier": "0196a9c3-bc7b-7e48-865f-e0540e7b2d71",
+    "pageSpeed": null,
+    "trackersWithIssue": [],
+    "cookies": [],
+    "scripts": []
+  },
+  {
+    "title": "Set up server-side tracking for Klaviyo",
+    "description": "We’ve detected that you’re using client-side tracking for Klaviyo, but the platform also supports server-side tracking. Setting up server-side tracking is highly recommended for better performance.",
+    "scorePercent": 3,
+    "isCritical": false,
+    "howToVideo": "https://www.youtube.com/watch?v=t5fqMfJs3K8&t=2s",
+    "howToTitle": "Learn how to configure Klaviyo tracking",
+    "howToPost": {
+      "slug": "integrate-klaviyo-with-your-website-using-google-tag-manager-server-container",
+      "title": "Integrate Klaviyo with your website using Google Tag Manager Server container",
+      "language": "en",
+      "type": "blog"
+    },
+    "categories": [
+      "Advertising"
+    ],
+    "trackerIdentifier": "0196a9c3-bcb0-7bd2-a2e4-720a14459b83",
+    "pageSpeed": null,
+    "trackersWithIssue": [],
+    "cookies": [],
+    "scripts": []
+  }
+]

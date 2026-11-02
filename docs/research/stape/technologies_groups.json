@@ -1,0 +1,132 @@
+[
+  {
+    "key": "ecommerce",
+    "label": "Ecommerce",
+    "technologies": [
+      {
+        "name": "Cart Functionality",
+        "iconSrc": null
+      },
+      {
+        "name": "Shopify",
+        "iconSrc": "https://cdn.stape.io/technology-icons/Shopify.png"
+      }
+    ]
+  },
+  {
+    "key": "analytics-trackers",
+    "label": "Analytics trackers",
+    "technologies": [
+      {
+        "name": "Google Analytics 4",
+        "iconSrc": "https://cdn.stape.io/technology-icons/Google Analytics.png"
+      },
+      {
+        "name": "Universal Analytics",
+        "iconSrc": "https://cdn.stape.io/technology-icons/Google Universal.png"
+      },
+      {
+        "name": "Hotjar",
+        "iconSrc": "https://cdn.stape.io/technology-icons/Hotjar.png"
+      }
+    ]
+  },
+  {
+    "key": "advertising-trackers",
+    "label": "Advertising trackers",
+    "technologies": [
+      {
+        "name": "Meta",
+        "iconSrc": "https://cdn.stape.io/technology-icons/Meta.png"
+      },
+      {
+        "name": "Google Ads",
+        "iconSrc": "https://cdn.stape.io/technology-icons/Google Ads.png"
+      },
+      {
+        "name": "Klaviyo",
+        "iconSrc": "https://cdn.stape.io/technology-icons/Klaviyo.png"
+      },
+      {
+        "name": "Microsoft Ads",
+        "iconSrc": "https://cdn.stape.io/technology-icons/Microsoft.png"
+      },
+      {
+        "name": "Microsoft Clarity",
+        "iconSrc": "https://cdn.stape.io/technology-icons/Microsoft Clarity.png"
+      }
+    ]
+  },
+  {
+    "key": "cdn",
+    "label": "CDN",
+    "technologies": [
+      {
+        "name": "jsDelivr",
+        "iconSrc": "https://cdn.stape.io/technology-icons/jsdelivr-icon.png"
+      },
+      {
+        "name": "cdnjs",
+        "iconSrc": "https://cdn.stape.io/technology-icons/cdnjs.png"
+      },
+      {
+        "name": "Cloudflare",
+        "iconSrc": "https://cdn.stape.io/technology-icons/CloudFlare.png"
+      }
+    ]
+  },
+  {
+    "key": "hosting",
+    "label": "Hosting",
+    "technologies": [
+      {
+        "name": "GoDaddy",
+        "iconSrc": "https://cdn.stape.io/technology-icons/GoDaddy.png"
+      }
+    ]
+  },
+  {
+    "key": "cookie-compliance",
+    "label": "Cookie Compliance",
+    "technologies": [
+      {
+        "name": "Pandectes",
+        "iconSrc": null
+      }
+    ]
+  },
+  {
+    "key": "payment-processors",
+    "label": "Payment Processors",
+    "technologies": [
+      {
+        "name": "Visa",
+        "iconSrc": "https://cdn.stape.io/technology-icons/Visa.png"
+      },
+      {
+        "name": "PayPal",
+        "iconSrc": "https://cdn.stape.io/technology-icons/PayPal.png"
+      },
+      {
+        "name": "Mastercard",
+        "iconSrc": "https://cdn.stape.io/technology-icons/Mastercard.png"
+      },
+      {
+        "name": "Google Pay",
+        "iconSrc": null
+      },
+      {
+        "name": "Apple Pay",
+        "iconSrc": null
+      },
+      {
+        "name": "American Express",
+        "iconSrc": null
+      },
+      {
+        "name": "Klarna Checkout",
+        "iconSrc": null
+      }
+    ]
+  }
+]

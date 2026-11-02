@@ -1,0 +1,254 @@
+Website Tracking Checker by Stape
+[SVG]
+‌
+Website Tracking Report
+Scanned: 30 October 2026 01:55 UTC
+Scanned: 30 Oct 2026 01:55 UTC
+[SVG]
+theecowoman.es
+[SVG]
+theecowoman.es
+Run new scan [SVG]
+Run new scan [SVG]
+Overall score
+[SVG]
+8
+trackers
+trackers detected
+0
+/100
+[SVG]
+Weak
+Analytics
+4 issues identified
+Weak
+Advertising
+6 issues identified
+Weak
+Cookie durability
+6 issues identified
+Weak
+SEO
+7 issues identified
+Medium
+Detected technologies
+[SVG]
+View all
+Cart Functionality
+Shopify
+Google Analytics 4
+Universal Analytics
+Hotjar
+Meta
+Google Ads
+Klaviyo
+Microsoft Ads
++13
+View all
+Tracking architecture
+[SVG]
+Properly configured
+Microsoft Clarity
+Hotjar
+With issues
+Client-side trackers
+Meta
+Google Analytics 4
+Google Ads
+Klaviyo
+Universal Analytics
+Microsoft Ads
+[SVG]
+[SVG]
+Move to server-side tracking
+[SVG]
+Ad blocker resistant
+[SVG]
+ITP-resistant cookies
+[SVG]
+Bot and AI detection
+[SVG]
+Offline conversions
+[SVG]
+Data enrichment
+[SVG]
+Business impact
+[SVG]
+Reduced data loss from browsers and ad blockers
+[SVG]
+Better optimization signals for ad platforms
+[SVG]
+Higher event match quality and ROAS measurement
+[SVG]
+Better audience building for remarketing
+[SVG]
+Easier compliance with privacy regulations
+Estimated tracking losses
+[SVG]
+Your monthly ad spend
+$1,000
+$3,000
+$5,000
+$10,000
+$30,000
+Your monthly unique visitors
+10,000
+50,000
+100,000
+500,000
+2,000,000
+Estimated advertising budget impact
+$900 - $1,050
+/month
+Estimated untracked visits
+6,500 - 8,000
+/month
+[SVG]
+No coding
+~20% sales recovered
+Lower ad costs
+Set up tracking for Shopify much faster with Stape
+Your score vs. competitors
+[SVG]
+‌
+‌
+‌
+‌
+‌
+‌
+‌
+‌
+‌
+‌
+‌
+‌
+‌
+‌
+‌
+‌
+‌
+‌
+‌
+‌
+‌
+‌
+‌
+‌
+‌
+‌
+‌
+‌
+‌
+‌
+‌
+‌
+‌
+‌
+‌
+‌
+‌
+‌
+‌
+‌
+‌
+‌
+‌
+‌
+‌
+‌
+‌
+‌
+‌
+‌
+‌
+‌
+‌
+‌
+‌
+‌
+‌
+‌
+‌
+‌
+‌
+‌
+‌
+‌
+‌
+‌
+‌
+‌
+‌
+Recommended actions
+9
+9
+Recommended actions
+Your website&#x27;s tracking setup currently has a very low overall score of 16, indicating significant areas for improvement. All detected tracking, including for key platforms like Google Analytics 4, Meta, and Google Ads, is primarily client-side.
+Currently, all your tracking operates client-side, making it vulnerable to ad blockers, browser privacy settings, and cookie restrictions, which leads to substantial data loss, attribution gaps, and under-reporting of user actions. Transitioning to server-side tracking for platforms that support it, such as Google Analytics 4, Meta, and Google Ads, would significantly improve data accuracy, ensure more reliable attribution for your marketing campaigns, and provide a more complete picture of customer journeys, enabling faster and more informed business decisions. This shift is crucial for maintaining robust data collection in today&#x27;s evolving digital landscape. Below you can find all the recommendations for your tracking and ways to improve it.
+Show more
+Use Cookie Keeper to bypass ITP limits and extend cookie duration
+Cookies
+Critical
++
+19
+to score
+Cookies
+Critical
+Implement Google Analytics 4 server-side tracking
+Analytics
+Critical
++
+16
+to score
+Analytics
+Critical
+Avoid negative impact of ad blockers
+Advertising
+Analytics
++
+12
+to score
+Advertising
+Analytics
+Switch to web &amp; server-side tracking for Meta
+Advertising
++
+8
+to score
+Advertising
+Remove Universal Analytics script
+Advertising
++
+8
+to score
+Advertising
+Move to Google Ads server-side tracking
+Advertising
++
+6
+to score
+Advertising
+Optimise page speed
+Pagespeed
++
+5
+to score
+Pagespeed
+Switch to hybrid tracking for Microsoft Ads
+Advertising
++
+4
+to score
+Advertising
+Set up server-side tracking for Klaviyo
+Advertising
++
+3
+to score
+Advertising
+Give your tracking setup a quick fix
+Try Setup Wizard
+[SVG]
+Helping your clients with tracking?
+Become a Stape partner and earn up to 40% recurring commissions.
+Become a partner
